@@ -1,0 +1,106 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>实验7-超链接样式与导航条的制作</title>
+<style>
+#container{ width:900px; margin-left:auto; margin-right:auto; margin-top:0px;}
+
+#navMenu1{ }
+#navMenu1 a{ display:block; float:left; text-decoration:none; background-image:url(img/nav3.jpg);/* border:1px dashed #F00;*/   height:36px; padding:0px 15px 0px 13px; text-align:center; color:#FFF; line-height:36px; }
+#navMenu1 a:hover{ background-image:url(img/nav2.jpg); background-position:center top}
+
+#navMenu2{ clear:left; width:150px; float:left;}
+#navMenu2 a{ display:block;text-decoration:none; background-color:#069; text-align:center; color:#FFF; line-height:40px; border-left:#003 7px solid; border-right:#003 20px solid; border-bottom:0.01px  dotted #CCC;}
+#navMenu2 a:hover{ background-color:#CCC; text-align:center; color:#906; line-height:40px; font-weight:900; ; border-left:#06C 20px solid; border-right: #06C 7px solid;}
+
+#travelPlan{ float:left; width:600px; background-image:url(img/bg1.jpg); padding:150px 0px 0px 5px;}
+#travelPlan h3 { color:#339; margin:5px;}
+#travelPlan a img{ width:120px; height:90px; border:#FFF 1px solid; padding:2px; float:left;}
+#travelPlan a:hover img{border:#F00 1px solid;}
+#travelPlan p{ width:155px; height:95px; float:left; margin:0px 5px; font-size:15px; line-height:1.5; padding:0px 5px 5px 0px;}
+#travelPlan p a{text-decoration:none; }
+#travelPlan p a:hover{  color:#F36; border-bottom:#F36 1px dotted; }
+
+#food{ width:140px; float:left; background-image:url(img/bg2.jpg); background-position:top center;}
+#food h3{ color: #360;margin:5px;}
+#food ul{ padding:0px 0px 0px 22px; list-style-image:url(img/li1.gif);margin:0px;}
+#food ul li{ margin:0px;}
+#food ul li a{ display:block; padding:8px 0px 10px 0px; text-decoration:none; font-size:15px; color:#F0C; font-weight:bolder; border-bottom:#CCC 1px dotted;}
+#food ul li a:hover{background-color:#F09; color:#FFF;}
+
+#foot{ clear:left; text-align:center; color:#0F6;}
+
+</style>
+</head>
+
+<body>
+<div id="container">
+	<div id="navMenu1">		<!--横排导航1-鼠标经过背景变换-->
+    	
+            <a  href="#">首页</a>
+            <a href="#" >阳朔概况</a>
+            <a href="#">景点介绍</a>
+            <a href="#">阳朔美食</a>
+            <a href="#">阳朔购物</a>
+            <a href="#">旅游方式</a>
+            <a href="#">阳朔交通</a>
+            <a href="#">旅游预订</a>
+            <a href="#">旅游论坛</a>
+            <a href="#">旅游投诉</a>
+    	
+    </div><!--navMenu1 end-->
+    
+    <div id="navMenu2">		<!--竖排导航2-鼠标经过荧光灯效果-->
+    	
+            <a  href="#">首页</a>
+            <a href="#" >阳朔概况</a>
+            <a href="#">景点介绍</a>
+            <a href="#">阳朔美食</a>
+            <a href="#">阳朔购物</a>
+            <a href="#">旅游方式</a>
+            <a href="#">阳朔交通</a>
+            <a href="#">旅游预订</a>
+            <a href="#">旅游论坛</a>
+            <a href="#">旅游投诉</a>
+    	
+    </div><!--navMenu2 end-->
+    
+    <div id="travelPlan">	<!--旅游方式栏目-添加鼠标经过特效-->
+    			<h3>旅游方式</h3>
+                
+       			<a href="#"><img src="img/2.jpg"  /></a>
+                <p><a href="#">如果你会游泳，可结伴到遇龙河、田家河等处划竹筏，享受浪漫...</a></p>
+           
+            	<a  href="#"><img src="img/5.jpg"  /></a>
+                <p><a href="#">如果时间允许，您不妨到西街或停车场或您所住的旅店租一辆自行...</a></p>
+            
+            	<a href="#"><img src="img/4.jpg"  /></a>
+                <p><a href="#">要看好风景，徙步最舒心。阳朔处处皆图画，徙步其间，既可受到...</a></p>
+            
+            	<a   href="#"><img src="img/9.jpg"  /></a>
+                <p><a href="#">自驾车游览线路: （1）、县城--福利--兴坪--留公--莲花岩--县城...</a></p>
+    </div><!--travelPlan end-->
+    
+    <div id="food">		<!--阳朔美食栏目--->
+    	<h3>阳朔美食</h3>
+    	<ul>
+            <li><a  href="#">阳朔田螺酿</a></li>
+            <li><a href="#" >漓江啤酒鱼</a></li>
+            <li><a href="#">全州黄闷禾花鱼</a></li>
+            <li><a href="#">荔浦芋扣肉</a></li>
+            <li><a href="#">桂林荷叶鸭</a></li>
+            <li><a href="#">桂林三花酒</a></li>
+            <li><a href="#">桂林辣椒酱</a></li>
+            <li><a href="#">桂林粉利</a></li>
+            <li><a href="#">阳朔粑粑</a></li>
+            <li><a href="#">阳朔松糕</a></li>
+    	</ul>
+    </div><!--food end-->
+    
+    <div id="foot">     <!--页脚--->
+    	应数090谭毛毛&copy;版权所有
+    </div><!--foot end-->
+</div>    
+</body>
+</html>

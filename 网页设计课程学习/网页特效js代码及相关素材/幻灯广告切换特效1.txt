@@ -1,0 +1,30 @@
+		/*把以下代码复制到body标签里，并把play.swf文件复制到网页所在文件夹*/  
+		<SCRIPT type=text/javascript>
+			<!--	
+			  imgUrl1="img/1.jpg";		/*图片路径和图片名称*/
+			  imgtext1="花鸟鱼虫1";		/*广告说明文字*/
+			  imgLink1=escape("#");		/*双引号里的#为文字超链接的路径和文件名*/
+			  imgUrl2="img/2.jpg";
+			  imgtext2="花鸟鱼虫2";
+			  imgLink2=escape("#");
+			  imgUrl3="img/3.jpg";
+			  imgtext3="花鸟鱼虫3";
+			  imgLink3=escape("#");
+			  imgUrl4="img/4.jpg";
+			  imgtext4="花鸟鱼虫4";
+			  imgLink4=escape("#");
+			  var focus_width=320		/*幻灯区域宽度*/
+			  var focus_height=210		/*幻灯区域高度*/
+			  var text_height=20		/*文字区域高度*/
+			  var swf_height = focus_height+text_height
+			  var pics = imgUrl1+"|"+imgUrl2+"|"+imgUrl3+"|"+imgUrl4
+			  var links = imgLink1+"|"+imgLink2+"|"+imgLink3+"|"+imgLink4
+			  var texts = imgtext1+"|"+imgtext2+"|"+imgtext3+"|"+imgtext4
+			  document.write('<object id="FlashID" classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000"  width="'+ focus_width +'" height="'+ swf_height +'">');
+			  document.write('<param name="allowScriptAccess" value="sameDomain"><param name="movie" value="playswf.swf"><param name="quality" value="high"><param name="bgcolor" value="#ffffff">');
+			  document.write('<param name="menu" value="false"><param name=wmode value="opaque">');
+			  document.write('<param name="FlashVars" value="pics='+pics+'&links='+links+'&texts='+texts+'&borderwidth='+focus_width+'&borderheight='+focus_height+'&textheight='+text_height+'">');
+			  document.write('<embed ID="focus_flash" src="playswf.swf" wmode="opaque" FlashVars="pics='+pics+'&links='+links+'&texts='+texts+'&borderwidth='+focus_width+'&borderheight='+focus_height+'&textheight='+text_height+'" menu="false" bgcolor="#C5C5C5" quality="high" width="'+ focus_width +'" height="'+ swf_height +'" allowScriptAccess="sameDomain" type="application/x-shockwave-flash" pluginspage="http://www.macromedia.com/go/getflashplayer" />');
+		document.write('</object>');
+			-->
+			</SCRIPT>

@@ -1,0 +1,44 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>体验CSS1</title>
+<!--（1）将网页中的标题1设为：文字大小为30像素、黑体、白色、水平居中、背景为蓝色、内边距为15像素。
+（2）将网页中的标题3设为：文字大小为22像素、楷体、绿色、加上顶线和下划线。
+（3）将各段落设置为：文字大小为12像素、首行缩进2个字符、段内行高为字体大小的1.5倍、段距为5像素。
+（4）将第一个故事的最后一句“这就是说，有些人能力小，做不成事，就借口说时机未成熟。”设为：倾斜，加下划线。
+（5）将网页中的第一个故事的英文设置为单词首字大写。
+（6）将第二个故事的最后一句“这故事说明，对坏人行善的报酬，就是认识坏人不讲信用的本质。”设为：加粗，加下划线。
+（7）将网页中第二个故事的英文的词距设置为8像素。
+（8）将网页中第二个故事的两个段落均设为首字下沉，下沉行数为3字符。
+（9）将图片设为：向左浮动。-->
+
+<style>
+h1{ font-size:30px; font-family: "黑体"; color:#FFF; text-align:center; background-color:#036; padding:15px;    }
+h3{ font-size:22px; font-family: "华文楷体"; color:#060; text-decoration: underline overline}
+p { font-size:12px; text-indent:2em; line-height:1.5; margin-bottom:5px }
+#p1 {}
+#p1 span { font-style:italic; text-decoration:underline}
+#p2 { text-transform:capitalize;}
+#p3 .jiacu{ font-weight:bolder;text-decoration:underline; text-indent:0px; }
+#p4 { word-spacing:8px}
+.firstletter { font-size:3em; float:left; clear:both; /*清除上一个浮动对象对自身的影，以使得两个浮动对象对齐左边界*/}
+img { float:left}
+</style>
+
+
+</head>
+
+<body>
+<h1>伊索寓言</h1>
+<img src="images/cup.gif" width="128" height="128"/>
+<h3>狐狸和葡萄</h3>
+<p id="p1" >饥饿的狐狸看见葡萄架上挂着一串串晶莹剔透的葡萄，口水直流，想要摘下来吃，但又摘不到。看了一会儿，无可奈何地走了，他边走边自己安慰自己说：“这葡萄没有熟，肯定是酸的。”<span >这就是说，有些人能力小，做不成事，就借口说时机未成熟。</span></p>
+<p id="p2">The hungry fox saw the vine hanging from a string of sparkling grape, mouth water, you want to eat off, but will not find any. Looked for a moment, helplessly away, he walked himself to comfort himself said: "This grape is not done, must be sour." This means that some capacity is small, do not accomplish anything, on the pretext that prematurely. </p>
+
+<h3>狼与鹭鸶</h3>
+<p id="p3"><span class="firstletter">狼</span>误吞下了一块骨头，十分难受，四处奔走，寻访医生。他遇见了鹭鸶，谈定酬金请他取出骨头，鹭鸶把自己的头伸进狼的喉咙里，叼出了骨头，便向狼要定好的酬金。狼回答说：“喂，朋友，你能从狼嘴里平安无事地收回头来，难道还不满足，怎么还要讲报酬？”<span class="jiacu">这故事说明，对坏人行善的报酬，就是认识坏人不讲信用的本质。</span></p>
+<p id="p4"><span class="firstletter">W</span>olf who had a bone, it hurts, there and everywhere, searching for a doctor. He met the egret, negotiated payment had extracted the bone, egrets and his own head into the wolf's throat, took out the jaws of the wolf to be a good remuneration. Wolf replied: "Hey, friend, if you would recover without incident mouth and head, are not met, but also about how the money?" This story illustrates, on the bad guys do good reward, and bad people do not speak the nature of the credit. </p>
+
+</body>
+</html>
