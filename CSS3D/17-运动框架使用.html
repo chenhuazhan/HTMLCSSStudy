@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        #box {
+            position: absolute;
+            left: 0;
+            top: 100px;
+            width: 100px;
+            height: 100px;
+            background: red;
+        }
+    </style>
+    <script src="js/mTween.js"></script>
+</head>
+<body>
+<button id="start">开始运动</button>  
+<button id="stop">停止运动</button>
+<div id="box"></div>  
+<script>
+/*
+props: {
+    el: 需要动画的元素,
+    attrs: { // 需要动画的样式
+        width: 100,
+        ……
+    },
+    fx: 需要动画的形式 (easeOut)[]
+    duration: 动画持续时间  number||{
+            min: 持续时间最短多少毫米 ,
+            max:持续时间最长多少毫米 ,
+            multiple: 持续时间是运动距离的多少倍
+        }
+}
+*/    
+(function(){
+    let start = document.querySelector("#start");
+    let box = document.querySelector("#box");
+    start.onclick = function(){
+        mTween({
+            el:box,
+            attrs:{
+                width: 1300,
+                height: 400
+            },
+            fx:"backOut",
+            duration: {
+                multiple:1
+            },
+            cb(){
+                console.log("动画结束了");
+            }
+        });
+    }
+})();
+</script>
+</body>
+</html>

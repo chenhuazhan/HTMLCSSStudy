@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="js/mTween.js"></script>
+    <style>
+         #box {
+            margin: 200px auto;
+            padding: 50px;
+            width: 200px;
+            height: 200px;
+            border: 1px solid #000;
+        }
+        #div {
+            position: relative;
+            width: 200px;
+            height: 200px;
+            background: red;
+        }
+        #div div {
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 200px;
+            height: 200px;
+            font: 100px/200px "宋体";
+            text-align: center;
+            color: #fff;        
+        }
+    </style>
+</head>
+<body>
+<div id="box">
+    <div id="div" >
+    </div>    
+</div>
+<script>
+(function(){
+    let div = document.querySelector("#div");
+    //console.log(css(div,"background"));
+    //css(div,"width",100);
+    css(div,{
+        width:100,
+        height:100
+    })
+   /*
+    css 方法 
+    设置或获取元素的样式
+    ele 元素
+    attr "样式名"|| {width:100,height:100}
+    val 
+   */
+})();
+</script>
+</body>
+</html>

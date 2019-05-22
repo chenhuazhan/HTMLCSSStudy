@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="js/data.js"></script>
+</head>
+<body>
+<progress max="100" min="0" step="1" value="1" id="p" />    
+<script>
+    var nub = 0;
+    data.forEach(element => {
+        let img = new Image();
+        img.src = element;
+        img.onload = function(){
+            nub++;
+            p.value = (nub/data.length * 100).toFixed(0)
+        }
+    });
+</script>
+</body>
+</html>
